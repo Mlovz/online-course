@@ -1,0 +1,41 @@
+.card {
+  margin-top: 24px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 16px;
+  width: 100%;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.06);
+  background: #262626;
+}
+.check::before {
+  content: "";
+  display: block;
+  width: 13px;
+  height: 13px;
+  background: transparent;
+  border-radius: 50%;
+  border: 3px solid #4ea8de;
+  cursor: pointer;
+}
+.checked::before {
+  content: url("../assets/like.svg");
+  display: block;
+  width: 17px;
+  height: 17px;
+  background: transparent;
+  cursor: pointer;
+}
+.todsWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.todoText {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  text-decoration: line-through;
+  color: #808080;
+}
+button {
+  cursor: pointer;
+}
